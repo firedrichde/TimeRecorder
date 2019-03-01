@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration  status="WARN" monitorInterval="30" >
+    <Appenders>
+        <!--<Console name="Console" target="SYSTEM_OUT">-->
+            <!--<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} -%msg%n"></PatternLayout>-->
+        <!--</Console>-->
+        <Servlet name="Servlet">
+            <PatternLayout pattern="%m%n%ex{none}"/>
+        </Servlet>
+        <File name="File" fileName="G:\IEDAPerfect\TimeRecorder\src\out.txt" bufferedIO="true">
+            <PatternLayout pattern="%d{DEFAULT} [%t] %-5level %logger{36} -%msg%n"></PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="test" level="trace" additivity="false">
+            <AppenderRef ref="File"></AppenderRef>
+            <AppenderRef ref="Servlet"></AppenderRef>
+            <!--<AppenderRef ref="Console"></AppenderRef>-->
+        </Logger>
+        <!--<Root level="error">-->
+            <!--<AppenderRef ref="Console"></AppenderRef>-->
+        <!--</Root>-->
+    </Loggers>
+</Configuration>
+
+
+<!--<if log message not written in log file then search site below>-->
+<!--<https://stackoverflow.com/questions/51406134/log4j2-logs-are-not-being-written-into-file>-->
+<!--<solution>-->
+<!--<In the xml configuration file, I've written the full path to the file ("baseDir" property) and it works>-->

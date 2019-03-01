@@ -1,0 +1,9 @@
+.div_1{
+    font-family: Consolas, serif;
+font-size: 20px;             /* in pixels (px) */
+margin: 5px 15px 5px 15px;   /* top right bottom left - no commas in between */
+padding: 0;
+}
+.text_1{
+    font-size: 20px;
+}

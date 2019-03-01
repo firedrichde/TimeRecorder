@@ -1,0 +1,30 @@
+.all{
+    background-color: #24292e;
+}
+.a1,.b1,.b2{
+    border: 1px ;
+}
+.a1{
+    height: 260px;
+    float: left;
+    width: 30%;
+}
+.b1{
+    height: 70%;
+    width: 100%;
+}
+.b2{
+    height: 10%;
+    float:right;
+    width: 20%;
+    alignment: bottom;
+}
+.link1{
+    font-size: 20px;
+    color: whitesmoke;
+}
+.link2{
+    font-size: 20px;
+    color: whitesmoke;
+}
+
